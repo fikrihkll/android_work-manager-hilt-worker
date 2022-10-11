@@ -20,7 +20,7 @@ constructor(
 ) : CoroutineWorker(context, workerParameters){
 
     override suspend fun doWork(): Result {
-        val data = repository.sendData("May Allah always helps and loves me")
+        val data = repository.sendData("This data is important")
         delay(3000)
         Log.w("FKR", "Worker done with return value\n$data")
         return Result.success()
